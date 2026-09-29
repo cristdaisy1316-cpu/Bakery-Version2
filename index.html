@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#22638f">
+    <meta name="description" content="Small-batch bakes, thoughtful recipes, and sweet stories from Rise Sweets.">
+    <title>Crystal Sweets | Homemade with love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    djdjaj
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#home" aria-label="Rise Sweets home">
+                <img src="draftonelogo.png" alt="Rise Sweets, homemade sweets made with love">
+                <span class="brand-name">Rise Sweets</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home" class="page-wrap">
+        <section class="welcome" aria-labelledby="welcome-title">
+            <p class="eyebrow">A little sweetness, made from scratch</p>
+            <h1 id="welcome-title">Good things <span>rise here.</span></h1>
+            <p class="welcome-copy">Fresh from our kitchen: cozy recipes, behind-the-scenes notes, and treats worth sharing.</p>
+        </section>
+
+        <section class="stories" aria-label="Bakery stories and recent articles">
+            <div class="featured-story" aria-live="polite">
+                <div class="story-image-wrap">
+                    <img id="story-image" class="story-image" src="" alt="">
+                    <span id="story-category" class="image-tag"></span>
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <span id="story-date"></span>
+                        <span class="meta-dot" aria-hidden="true"></span>
+                        <span id="story-reading-time"></span>
+                    </div>
+                    <h2 id="story-title"></h2>
+                    <p id="story-summary" class="story-summary"></p>
+                    <div class="story-controls">
+                        <div class="slide-dots" id="slide-dots" aria-label="Choose an article"></div>
+                        <div class="arrow-controls">
+                            <button class="arrow-button" id="previous-story" type="button" aria-label="Previous article">&larr;</button>
+                            <button class="arrow-button" id="next-story" type="button" aria-label="Next article">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="recent-stories" aria-labelledby="recent-title">
+                <div class="aside-heading">
+                    <p class="eyebrow">From the kitchen</p>
+                    <h2 id="recent-title">Recent articles</h2>
+                </div>
+                <div id="recent-list" class="recent-list"></div>
+                <a class="all-stories-link" href="#products">More from Rise Sweets <span aria-hidden="true">&rarr;</span></a>
+            </aside>
+        </section>
+
+        <section class="lower-sections" aria-label="About and bakery products">
+            <article class="lower-section" id="about">
+                <p class="eyebrow">A note from our kitchen</p>
+                <h2>Made slowly. Shared gladly.</h2>
+                <p>Rise Sweets is a small-batch bakery built around the simple joy of homemade treats. We believe the best recipes are the ones you make, share, and come back to.</p>
+            </article>
+            <article class="lower-section product-section" id="products">
+                <p class="eyebrow">On the counter</p>
+                <h2>Something sweet for today.</h2>
+                <p>Cookies, celebration cakes, and seasonal bakes are made with care in our kitchen. Get in touch to ask about this week's treats and custom orders.</p>
+                <a class="text-link" href="#contact">Ask about an order <span aria-hidden="true">&rarr;</span></a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-brand">Rise Sweets</p>
+                <p class="footer-note">Homemade sweets, made with love.</p>
+            </div>
+            <div class="footer-contact">
+                <p class="eyebrow">Say hello</p>
+                <a href="mailto:hello@risesweets.com">hello@risesweets.com</a>
+                <a href="tel:+15550142026">(555) 014-2026</a>
+            </div>
+            <p class="copyright">&copy; <span id="current-year"></span> Rise Sweets</p>
+        </div>
+    </footer>
 </body>
 </html>
